@@ -1,7 +1,0 @@
-{
-    "env": {
-        "MONGO_USER": "ajbertrand",
-        "MONGO_PASSWORD": "D8wmqXBkjxQdmmzY",
-        "MONGO_DB": "hoa-map-dev"
-    }
-}
