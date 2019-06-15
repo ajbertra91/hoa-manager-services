@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ $NODE_ENV = "production" ]; then
-  node src/index.js;
+  node ./index.js;
 else
-  nodemon src/index.js;
+  nodemon ./index.js;
 fi
