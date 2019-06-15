@@ -19,7 +19,7 @@ mongoose
     // This `listen` method launches a web-server.
     const PORT = process.env.PORT || 4000;
     app.listen({ port: PORT}, () => {
-      console.log(`Server ready ${process.env === 'production' ? ':: ' : 'at http://localhost:4000'}${server.graphqlPath}`)
+      console.log(`Server ready ${process.env.NODE_ENV === 'production' ? ':: ' : 'at http://localhost:4000'}${server.graphqlPath}`)
     });
   })
   .catch(error => {
