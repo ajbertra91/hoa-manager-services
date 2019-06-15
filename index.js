@@ -17,7 +17,8 @@ mongoose
   )
   .then(() => {
     // This `listen` method launches a web-server.
-    app.listen({port:4000}, () => {
+    const PORT = process.env.PORT || 4000;
+    app.listen({ port: PORT}, () => {
       console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
     });
   })
